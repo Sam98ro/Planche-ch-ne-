@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Planche by SR — Planches en Chêne Massif Artisanales</title>
+  <meta name="description" content="Planches en chêne massif façonnées à la main. Planches à découper, plateaux de service et pièces uniques en bois noble.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =================== NAVIGATION =================== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-main">La Planche</span>
+        <span class="nav__logo-by">by SR</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">L'Artisan</a></li>
+        <li><a href="#products">Nos Planches</a></li>
+        <li><a href="#process">Fabrication</a></li>
+        <li><a href="#materials">Matériaux</a></li>
+        <li><a href="#contact" class="nav__cta">Commander</a></li>
+      </ul>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- =================== HERO =================== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__noise"></div>
+      <div class="hero__vignette"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Artisanat du Chêne Massif</p>
+      <h1 class="hero__title">
+        <span class="hero__line">La Planche</span>
+        <span class="hero__line hero__line--italic">by SR</span>
+      </h1>
+      <p class="hero__sub">Chaque pièce est façonnée à la main,<br>avec le respect du bois et le soin du détail.</p>
+      <div class="hero__actions">
+        <a href="#products" class="btn btn--gold">Découvrir nos planches</a>
+        <a href="#about" class="btn btn--ghost">Notre histoire</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span>Défiler</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- =================== MARQUEE =================== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Chêne massif</span><span class="marquee__dot">✦</span>
+      <span>Fait main</span><span class="marquee__dot">✦</span>
+      <span>Finition à l'huile naturelle</span><span class="marquee__dot">✦</span>
+      <span>Pièce unique</span><span class="marquee__dot">✦</span>
+      <span>Qualité premium</span><span class="marquee__dot">✦</span>
+      <span>Artisanat français</span><span class="marquee__dot">✦</span>
+      <span>Durable &amp; noble</span><span class="marquee__dot">✦</span>
+      <span>Chêne massif</span><span class="marquee__dot">✦</span>
+      <span>Fait main</span><span class="marquee__dot">✦</span>
+      <span>Finition à l'huile naturelle</span><span class="marquee__dot">✦</span>
+      <span>Pièce unique</span><span class="marquee__dot">✦</span>
+      <span>Qualité premium</span><span class="marquee__dot">✦</span>
+      <span>Artisanat français</span><span class="marquee__dot">✦</span>
+      <span>Durable &amp; noble</span><span class="marquee__dot">✦</span>
+    </div>
+  </div>
+
+  <!-- =================== QUOTE =================== -->
+  <section class="quote-band">
+    <div class="container">
+      <blockquote class="quote-band__text">
+        "Du chêne brut à la table. Chaque planche est une œuvre unique,<br>façonnée avec patience et passion."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- =================== ABOUT =================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__grid">
+
+        <div class="about__visual" data-aos="fade-right">
+          <div class="about__frame">
+            <div class="about__wood-img">
+              <svg class="about__grain-svg" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <defs>
+                  <filter id="grain-about">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.04 0.18" numOctaves="6" seed="4" stitchTiles="stitch"/>
+                    <feColorMatrix type="saturate" values="0.4"/>
+                    <feBlend in="SourceGraphic" mode="soft-light" result="blend"/>
+                  </filter>
+                </defs>
+                <rect width="400" height="500" fill="url(#woodGradAbout)" filter="url(#grain-about)" opacity="0.4"/>
+                <defs>
+                  <linearGradient id="woodGradAbout" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#E8C49A"/>
+                    <stop offset="40%" stop-color="#B8845A"/>
+                    <stop offset="70%" stop-color="#8B5E35"/>
+                    <stop offset="100%" stop-color="#C4956A"/>
+                  </linearGradient>
+                </defs>
+                <!-- Grain lines -->
+                <line x1="0" y1="55"  x2="400" y2="48"  stroke="#7A4A20" stroke-width="0.8" opacity="0.18"/>
+                <line x1="0" y1="90"  x2="400" y2="95"  stroke="#6B3D18" stroke-width="1.2" opacity="0.22"/>
+                <line x1="0" y1="130" x2="400" y2="128" stroke="#7A4A20" stroke-width="0.6" opacity="0.15"/>
+                <line x1="0" y1="175" x2="400" y2="180" stroke="#8B5530" stroke-width="1.5" opacity="0.25"/>
+                <line x1="0" y1="220" x2="400" y2="215" stroke="#6B3D18" stroke-width="0.8" opacity="0.18"/>
+                <line x1="0" y1="260" x2="400" y2="265" stroke="#7A4A20" stroke-width="1.2" opacity="0.20"/>
+                <line x1="0" y1="300" x2="400" y2="298" stroke="#8B5530" stroke-width="0.6" opacity="0.14"/>
+                <line x1="0" y1="340" x2="400" y2="345" stroke="#6B3D18" stroke-width="1.8" opacity="0.26"/>
+                <line x1="0" y1="385" x2="400" y2="382" stroke="#7A4A20" stroke-width="0.8" opacity="0.16"/>
+                <line x1="0" y1="420" x2="400" y2="425" stroke="#8B5530" stroke-width="1.0" opacity="0.20"/>
+                <line x1="0" y1="460" x2="400" y2="458" stroke="#6B3D18" stroke-width="0.7" opacity="0.15"/>
+                <!-- Knot hint -->
+                <ellipse cx="280" cy="200" rx="18" ry="12" fill="none" stroke="#5A3018" stroke-width="1.2" opacity="0.3"/>
+                <ellipse cx="280" cy="200" rx="10" ry="7"  fill="none" stroke="#5A3018" stroke-width="0.8" opacity="0.25"/>
+              </svg>
+            </div>
+            <div class="about__badge">
+              <strong>100%</strong>
+              <span>Fait main</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__content" data-aos="fade-left">
+          <span class="section-tag">L'Artisan</span>
+          <h2 class="section-title">Une passion <em>transmise</em><br>par le bois</h2>
+          <p class="about__p">Depuis mon atelier, j'élabore chaque planche avec un soin particulier. Le chêne massif est pour moi bien plus qu'un matériau — c'est un héritage vivant, aux veines uniques et à la chaleur incomparable.</p>
+          <p class="about__p">Chaque pièce naît d'une sélection rigoureuse du bois, d'un travail patient à la main et d'une finition soignée à l'huile naturelle. Aucune planche ne ressemble à une autre.</p>
+          <ul class="about__values">
+            <li class="about__value" data-aos="fade-up" data-aos-delay="100">
+              <span class="about__value-icon">◈</span>
+              <div>
+                <strong>Pièce unique</strong>
+                <p>Chaque planche est façonnée individuellement, aucune reproduction identique</p>
+              </div>
+            </li>
+            <li class="about__value" data-aos="fade-up" data-aos-delay="200">
+              <span class="about__value-icon">◈</span>
+              <div>
+                <strong>Chêne noble sélectionné</strong>
+                <p>Bois choisi pour sa qualité, sa densité et la beauté de ses veines</p>
+              </div>
+            </li>
+            <li class="about__value" data-aos="fade-up" data-aos-delay="300">
+              <span class="about__value-icon">◈</span>
+              <div>
+                <strong>Finition 100 % naturelle</strong>
+                <p>Huile alimentaire bio, sans produit chimique, respectueuse du bois</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== PRODUCTS =================== -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag section-tag--light">Collection</span>
+        <h2 class="section-title section-title--light">Nos <em>trois planches</em></h2>
+        <p class="section-desc section-desc--light">Trois formats, une même exigence artisanale. Chaque planche en chêne massif est travaillée à la main, de la première coupe à la finition finale.</p>
+      </div>
+
+      <div class="products__grid">
+
+        <!-- S — La Petite -->
+        <article class="card" data-aos="fade-up" data-aos-delay="0">
+          <div class="card__visual">
+            <div class="card__wood card__wood--s"></div>
+            <svg class="card__board-svg" viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="20" y="30" width="200" height="140" rx="10" stroke="rgba(255,220,150,0.3)" stroke-width="1.5"/>
+              <line x1="20" y1="68"  x2="220" y2="68"  stroke="rgba(255,220,150,0.12)" stroke-width="1"/>
+              <line x1="20" y1="95"  x2="220" y2="95"  stroke="rgba(255,220,150,0.08)" stroke-width="1"/>
+              <line x1="20" y1="120" x2="220" y2="120" stroke="rgba(255,220,150,0.12)" stroke-width="1"/>
+              <line x1="20" y1="148" x2="220" y2="148" stroke="rgba(255,220,150,0.08)" stroke-width="1"/>
+              <circle cx="180" cy="90" r="8" fill="none" stroke="rgba(255,200,100,0.2)" stroke-width="1"/>
+            </svg>
+            <span class="card__size">S</span>
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Apéritif &amp; Dégustation</span>
+            <h3 class="card__name">La Petite</h3>
+            <p class="card__desc">Idéale pour la présentation de fromages, charcuteries ou tapas. Compacte et élégante, elle s'impose aussi bien à la table qu'au buffet.</p>
+            <div class="card__specs">
+              <div class="spec"><span class="spec__l">Format</span><span class="spec__v">25 × 15 cm</span></div>
+              <div class="spec"><span class="spec__l">Épaisseur</span><span class="spec__v">2,5 cm</span></div>
+              <div class="spec"><span class="spec__l">Poids</span><span class="spec__v">~600 g</span></div>
+            </div>
+            <a href="#contact" class="card__cta">Commander <span>→</span></a>
+          </div>
+        </article>
+
+        <!-- M — La Classique (featured) -->
+        <article class="card card--featured" data-aos="fade-up" data-aos-delay="120">
+          <div class="card__ribbon">Best-seller</div>
+          <div class="card__visual">
+            <div class="card__wood card__wood--m"></div>
+            <svg class="card__board-svg" viewBox="0 0 300 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="15" y="25" width="225" height="165" rx="12" stroke="rgba(255,220,150,0.35)" stroke-width="1.5"/>
+              <line x1="15" y1="65"  x2="240" y2="65"  stroke="rgba(255,220,150,0.13)" stroke-width="1"/>
+              <line x1="15" y1="93"  x2="240" y2="93"  stroke="rgba(255,220,150,0.09)" stroke-width="1"/>
+              <line x1="15" y1="118" x2="240" y2="118" stroke="rgba(255,220,150,0.13)" stroke-width="1"/>
+              <line x1="15" y1="145" x2="240" y2="145" stroke="rgba(255,220,150,0.09)" stroke-width="1"/>
+              <line x1="15" y1="170" x2="240" y2="170" stroke="rgba(255,220,150,0.11)" stroke-width="1"/>
+              <!-- Handle -->
+              <path d="M 240 100 Q 270 100 274 82 Q 278 62 258 56" stroke="rgba(255,220,150,0.3)" stroke-width="1.5" stroke-linecap="round"/>
+              <ellipse cx="150" cy="115" rx="14" ry="9" fill="none" stroke="rgba(255,200,100,0.22)" stroke-width="1"/>
+            </svg>
+            <span class="card__size">M</span>
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Cuisine &amp; Découpe</span>
+            <h3 class="card__name">La Classique</h3>
+            <p class="card__desc">La planche à découper par excellence. Robuste, maniable et magnifique, elle s'impose comme pièce maîtresse de votre cuisine — un outil d'exception, un objet de décoration.</p>
+            <div class="card__specs">
+              <div class="spec"><span class="spec__l">Format</span><span class="spec__v">40 × 25 cm</span></div>
+              <div class="spec"><span class="spec__l">Épaisseur</span><span class="spec__v">3 cm</span></div>
+              <div class="spec"><span class="spec__l">Poids</span><span class="spec__v">~1,5 kg</span></div>
+            </div>
+            <a href="#contact" class="card__cta">Commander <span>→</span></a>
+          </div>
+        </article>
+
+        <!-- L — La Grande -->
+        <article class="card" data-aos="fade-up" data-aos-delay="240">
+          <div class="card__visual">
+            <div class="card__wood card__wood--l"></div>
+            <svg class="card__board-svg" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="10" y="22" width="270" height="170" rx="14" stroke="rgba(255,220,150,0.28)" stroke-width="1.5"/>
+              <line x1="10" y1="58"  x2="280" y2="58"  stroke="rgba(255,220,150,0.11)" stroke-width="1"/>
+              <line x1="10" y1="85"  x2="280" y2="85"  stroke="rgba(255,220,150,0.07)" stroke-width="1"/>
+              <line x1="10" y1="110" x2="280" y2="110" stroke="rgba(255,220,150,0.11)" stroke-width="1"/>
+              <line x1="10" y1="138" x2="280" y2="138" stroke="rgba(255,220,150,0.07)" stroke-width="1"/>
+              <line x1="10" y1="163" x2="280" y2="163" stroke="rgba(255,220,150,0.11)" stroke-width="1"/>
+              <line x1="10" y1="185" x2="280" y2="185" stroke="rgba(255,220,150,0.07)" stroke-width="1"/>
+              <ellipse cx="90"  cy="100" rx="20" ry="13" fill="none" stroke="rgba(255,200,100,0.2)" stroke-width="1"/>
+              <ellipse cx="90"  cy="100" rx="10" ry="7"  fill="none" stroke="rgba(255,200,100,0.14)" stroke-width="0.8"/>
+              <ellipse cx="220" cy="150" rx="12" ry="8"  fill="none" stroke="rgba(255,200,100,0.16)" stroke-width="0.8"/>
+            </svg>
+            <span class="card__size">L</span>
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Service &amp; Gastronomie</span>
+            <h3 class="card__name">La Grande</h3>
+            <p class="card__desc">Le plateau de service ultime. Généreux et saisissant, il transforme chaque repas en moment de partage raffiné. Parfait pour les grandes tablées et présentations gastro.</p>
+            <div class="card__specs">
+              <div class="spec"><span class="spec__l">Format</span><span class="spec__v">55 × 35 cm</span></div>
+              <div class="spec"><span class="spec__l">Épaisseur</span><span class="spec__v">3,5 cm</span></div>
+              <div class="spec"><span class="spec__l">Poids</span><span class="spec__v">~3 kg</span></div>
+            </div>
+            <a href="#contact" class="card__cta">Commander <span>→</span></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== PROCESS =================== -->
+  <section class="process" id="process">
+    <div class="process__bg"></div>
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag section-tag--light">Savoir-faire</span>
+        <h2 class="section-title section-title--light">Le geste <em>artisanal</em></h2>
+        <p class="section-desc section-desc--light">De la sélection du chêne à la finition finale, chaque étape est réalisée à la main avec rigueur et passion.</p>
+      </div>
+      <div class="process__steps">
+        <div class="process__step" data-aos="fade-up" data-aos-delay="0">
+          <div class="process__num">01</div>
+          <div class="process__info">
+            <h3>Sélection du bois</h3>
+            <p>Chaque morceau de chêne est choisi à la main pour ses veines, sa densité et sa noblesse. Seul le meilleur entre dans l'atelier.</p>
+          </div>
+        </div>
+        <div class="process__step" data-aos="fade-up" data-aos-delay="100">
+          <div class="process__num">02</div>
+          <div class="process__info">
+            <h3>Découpe &amp; Façonnage</h3>
+            <p>Le bois est découpé, mis en forme et ajusté avec précision. Chaque arête, chaque courbe est travaillée à la main.</p>
+          </div>
+        </div>
+        <div class="process__step" data-aos="fade-up" data-aos-delay="200">
+          <div class="process__num">03</div>
+          <div class="process__info">
+            <h3>Ponçage progressif</h3>
+            <p>Un ponçage en plusieurs passes révèle la beauté naturelle du chêne et prépare la surface à recevoir l'huile en profondeur.</p>
+          </div>
+        </div>
+        <div class="process__step" data-aos="fade-up" data-aos-delay="300">
+          <div class="process__num">04</div>
+          <div class="process__info">
+            <h3>Finition à l'huile naturelle</h3>
+            <p>Une application soigneuse d'huile alimentaire bio nourrit le bois, lui confère protection, douceur et cet éclat chaleureux caractéristique.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== MATERIALS =================== -->
+  <section class="materials" id="materials">
+    <div class="container">
+      <div class="materials__grid">
+
+        <div class="materials__content" data-aos="fade-right">
+          <span class="section-tag">Matériaux</span>
+          <h2 class="section-title">Le chêne, <em>roi des bois</em></h2>
+          <p class="materials__p">Le chêne massif est choisi pour ses qualités exceptionnelles : une dureté naturelle qui résiste aux chocs et à l'usure, une structure dense qui limite naturellement l'absorption des bactéries, et une longévité remarquable qui fait de chaque planche un compagnon de toute une vie.</p>
+          <p class="materials__p">Ses veines caractéristiques, sa chaleur visuelle et sa texture unique font de chaque pièce un objet singulier, impossible à reproduire à l'identique.</p>
+          <div class="materials__feats">
+            <div class="feat" data-aos="fade-up" data-aos-delay="100">
+              <span class="feat__icon">✦</span>
+              <div>
+                <strong>Résistance naturelle</strong>
+                <p>Bois dur et dense, résistant à l'usage quotidien intense</p>
+              </div>
+            </div>
+            <div class="feat" data-aos="fade-up" data-aos-delay="180">
+              <span class="feat__icon">✦</span>
+              <div>
+                <strong>Hygiène alimentaire</strong>
+                <p>Structure serrée limitant la pénétration des bactéries</p>
+              </div>
+            </div>
+            <div class="feat" data-aos="fade-up" data-aos-delay="260">
+              <span class="feat__icon">✦</span>
+              <div>
+                <strong>Longévité exceptionnelle</strong>
+                <p>Entretenue, une planche en chêne dure des décennies</p>
+              </div>
+            </div>
+            <div class="feat" data-aos="fade-up" data-aos-delay="340">
+              <span class="feat__icon">✦</span>
+              <div>
+                <strong>Unicité garantie</strong>
+                <p>Chaque bois a ses veines propres, aucune copie n'est possible</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="materials__visual" data-aos="fade-left">
+          <div class="wood-stack">
+            <div class="wood-plank wood-plank--light">
+              <svg class="plank__grain" viewBox="0 0 400 70" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <line x1="0" y1="18" x2="400" y2="16" stroke="#D4A870" stroke-width="0.8" opacity="0.35"/>
+                <line x1="0" y1="34" x2="400" y2="36" stroke="#C49060" stroke-width="1.2" opacity="0.3"/>
+                <line x1="0" y1="52" x2="400" y2="50" stroke="#D4A870" stroke-width="0.7" opacity="0.28"/>
+                <ellipse cx="310" cy="35" rx="14" ry="9" fill="none" stroke="#B8845A" stroke-width="0.8" opacity="0.4"/>
+              </svg>
+              <span class="plank__label">Chêne clair — veines douces</span>
+            </div>
+            <div class="wood-plank wood-plank--mid">
+              <svg class="plank__grain" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <line x1="0" y1="22" x2="400" y2="24" stroke="#8B5E35" stroke-width="1.0" opacity="0.4"/>
+                <line x1="0" y1="44" x2="400" y2="42" stroke="#7A5028" stroke-width="1.5" opacity="0.38"/>
+                <line x1="0" y1="62" x2="400" y2="64" stroke="#8B5E35" stroke-width="0.8" opacity="0.3"/>
+                <line x1="0" y1="82" x2="400" y2="80" stroke="#9A6A3A" stroke-width="1.2" opacity="0.35"/>
+                <ellipse cx="80"  cy="52" rx="18" ry="11" fill="none" stroke="#6B4220" stroke-width="1.0" opacity="0.45"/>
+                <ellipse cx="80"  cy="52" rx="9"  rx="9" ry="6"  fill="none" stroke="#6B4220" stroke-width="0.7" opacity="0.35"/>
+              </svg>
+              <span class="plank__label">Chêne classique — veines marquées</span>
+            </div>
+            <div class="wood-plank wood-plank--dark">
+              <svg class="plank__grain" viewBox="0 0 400 70" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <line x1="0" y1="16" x2="400" y2="18" stroke="#5A3018" stroke-width="0.9" opacity="0.45"/>
+                <line x1="0" y1="34" x2="400" y2="32" stroke="#4A2510" stroke-width="1.4" opacity="0.42"/>
+                <line x1="0" y1="52" x2="400" y2="54" stroke="#5A3018" stroke-width="0.7" opacity="0.38"/>
+              </svg>
+              <span class="plank__label">Chêne foncé — grain dense &amp; profond</span>
+            </div>
+            <div class="wood-stack__label">Chêne massif — 3 tonalités naturelles</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== CONTACT =================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Commander</span>
+        <h2 class="section-title">Votre planche <em>sur mesure</em></h2>
+        <p class="section-desc">Chaque commande est traitée personnellement. Décrivez vos attentes et je reviens vers vous dans les 48h.</p>
+      </div>
+      <div class="contact__grid">
+        <form class="contact__form" id="contactForm" data-aos="fade-right" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="fname">Nom &amp; Prénom</label>
+              <input type="text" id="fname" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form__group">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" name="email" placeholder="votre@email.com" required>
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="fproduct">Planche souhaitée</label>
+            <select id="fproduct" name="product">
+              <option value="">Choisir un format…</option>
+              <option value="s">La Petite — S (25 × 15 cm)</option>
+              <option value="m">La Classique — M (40 × 25 cm)</option>
+              <option value="l">La Grande — L (55 × 35 cm)</option>
+              <option value="custom">Pièce sur mesure</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="fmsg">Votre message</label>
+            <textarea id="fmsg" name="message" rows="4" placeholder="Décrivez vos attentes, vos questions, une personnalisation éventuelle…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--gold btn--full">Envoyer ma demande</button>
+        </form>
+
+        <div class="contact__info" data-aos="fade-left">
+          <div class="contact__block">
+            <h3>Un artisanat de proximité</h3>
+            <p>Chaque planche est fabriquée à la commande dans mon atelier. Le délai de fabrication est généralement de 1 à 3 semaines selon la demande et la complexité de la pièce.</p>
+          </div>
+          <div class="contact__block">
+            <h3>Pièces personnalisées</h3>
+            <p>Gravure, format sur mesure, finition spéciale ou cadeau d'entreprise — discutons de votre projet directement. Chaque détail compte.</p>
+          </div>
+          <div class="contact__block contact__block--last">
+            <h3>Suivre l'atelier</h3>
+            <div class="contact__socials">
+              <a href="#" class="social-btn">Instagram</a>
+              <a href="#" class="social-btn">Facebook</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span>La Planche</span>
+            <small>by SR</small>
+          </div>
+          <p>Planches en chêne massif façonnées à la main, avec soin et passion. Chaque pièce est unique.</p>
+        </div>
+        <div class="footer__nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">L'Artisan</a></li>
+            <li><a href="#products">Nos Planches</a></li>
+            <li><a href="#process">Fabrication</a></li>
+            <li><a href="#materials">Matériaux</a></li>
+            <li><a href="#contact">Commander</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4>Contact &amp; Commandes</h4>
+          <p>Disponible pour toute commande, projet sur mesure ou renseignement.</p>
+          <a href="#contact" class="btn btn--outline-light btn--sm">Nous écrire</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 La Planche by SR — Artisanat du chêne massif. Tous droits réservés.</p>
+        <p class="footer__craft">Fait avec passion, façonné à la main.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
