@@ -743,7 +743,7 @@ section { padding: clamp(5rem, 11vw, 9rem) 0; }
    PROCESS — 7 ÉTAPES
    ================================================================ */
 .process {
-  background: var(--ink);
+  background: var(--bg2);
   position: relative;
   overflow: hidden;
 }
@@ -751,9 +751,9 @@ section { padding: clamp(5rem, 11vw, 9rem) 0; }
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.04 0.2' numOctaves='5' seed='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.04 0.2' numOctaves='5' seed='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
   background-size: 300px;
-  opacity: 0.5;
+  opacity: 0.4;
   pointer-events: none;
 }
 
@@ -772,33 +772,33 @@ section { padding: clamp(5rem, 11vw, 9rem) 0; }
   align-items: flex-start;
   gap: 1.6rem;
   padding: 2.2rem 2.4rem;
-  border: 1px solid rgba(255,255,255,0.055);
+  border: 1px solid var(--line);
   margin: -1px 0 0 -1px;
   transition: background 0.3s;
 }
-.step:hover { background: rgba(255,255,255,0.035); }
+.step:hover { background: rgba(139,107,69,0.05); }
 .step__n {
   font-family: var(--font-d);
   font-size: 3.5rem;
   font-weight: 300;
-  color: rgba(200,165,100,0.16);
+  color: rgba(139,107,69,0.18);
   line-height: 1;
   flex-shrink: 0;
   letter-spacing: -0.04em;
   transition: color 0.3s;
 }
-.step:hover .step__n { color: rgba(200,165,100,0.38); }
+.step:hover .step__n { color: var(--warm-l); }
 .step__content h3 {
   font-family: var(--font-d);
   font-size: 1.28rem;
   font-weight: 400;
-  color: rgba(253,252,248,0.92);
+  color: var(--ink);
   margin-bottom: 0.6rem;
   line-height: 1.2;
 }
 .step__content p {
   font-size: 0.86rem;
-  color: rgba(253,252,248,0.5);
+  color: var(--muted);
   line-height: 1.82;
   font-weight: 300;
 }
@@ -975,7 +975,7 @@ section { padding: clamp(5rem, 11vw, 9rem) 0; }
    FOOTER
    ================================================================ */
 .footer {
-  background: var(--dark);
+  background: #3D2A18;
   padding: clamp(3.5rem, 7vw, 5.5rem) 0 2rem;
   position: relative;
 }
