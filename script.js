@@ -7,9 +7,9 @@
 
   /* ---- Catalogue ---- */
   const P = {
-    s: { id: 's', name: 'La Petite',    size: '25 × 15 cm', price: 45  },
-    m: { id: 'm', name: 'La Classique', size: '40 × 25 cm', price: 85  },
-    l: { id: 'l', name: 'La Grande',    size: '55 × 35 cm', price: 135 },
+    s: { id: 's', name: 'La Petite',    size: '25 × 25 cm',      price: 45  },
+    m: { id: 'm', name: 'La Classique', size: '33 × 25–30 cm',   price: 85  },
+    l: { id: 'l', name: 'La Grande',    size: '50 × 25–30 cm',   price: 135 },
   };
 
   /* ---- Cart ---- */
