@@ -7,7 +7,7 @@
   <meta name="description" content="Planches en chêne massif façonnées à la main. Planches à découper, plateaux de service et pièces uniques en bois noble.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,11 +24,20 @@
         <li><a href="#products">Nos Planches</a></li>
         <li><a href="#process">Fabrication</a></li>
         <li><a href="#materials">Matériaux</a></li>
-        <li><a href="#contact" class="nav__cta">Commander</a></li>
+        <li><a href="#contact" class="nav__contact-link">Contact</a></li>
       </ul>
-      <button class="nav__burger" id="burger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav__actions">
+        <button class="nav__cart" id="cartBtn" aria-label="Panier">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="nav__cart-badge" id="cartBadge" aria-label="0 article">0</span>
+        </button>
+        <button class="nav__burger" id="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -41,12 +50,12 @@
     <div class="hero__content">
       <p class="hero__eyebrow">Artisanat du Chêne Massif</p>
       <h1 class="hero__title">
-        <span class="hero__line">La Planche</span>
-        <span class="hero__line hero__line--italic">by SR</span>
+        <span class="hero__line">L'art du chêne,</span>
+        <span class="hero__line hero__line--italic">à ta table.</span>
       </h1>
-      <p class="hero__sub">Chaque pièce est façonnée à la main,<br>avec le respect du bois et le soin du détail.</p>
+      <p class="hero__sub">Chaque planche est façonnée à la main dans notre atelier,<br>avec le respect du bois et le soin du moindre détail.</p>
       <div class="hero__actions">
-        <a href="#products" class="btn btn--gold">Découvrir nos planches</a>
+        <a href="#products" class="btn btn--primary">Découvrir nos planches</a>
         <a href="#about" class="btn btn--ghost">Notre histoire</a>
       </div>
     </div>
@@ -64,14 +73,14 @@
       <span>Finition à l'huile naturelle</span><span class="marquee__dot">✦</span>
       <span>Pièce unique</span><span class="marquee__dot">✦</span>
       <span>Qualité premium</span><span class="marquee__dot">✦</span>
-      <span>Artisanat français</span><span class="marquee__dot">✦</span>
+      <span>Artisanat suisse</span><span class="marquee__dot">✦</span>
       <span>Durable &amp; noble</span><span class="marquee__dot">✦</span>
       <span>Chêne massif</span><span class="marquee__dot">✦</span>
       <span>Fait main</span><span class="marquee__dot">✦</span>
       <span>Finition à l'huile naturelle</span><span class="marquee__dot">✦</span>
       <span>Pièce unique</span><span class="marquee__dot">✦</span>
       <span>Qualité premium</span><span class="marquee__dot">✦</span>
-      <span>Artisanat français</span><span class="marquee__dot">✦</span>
+      <span>Artisanat suisse</span><span class="marquee__dot">✦</span>
       <span>Durable &amp; noble</span><span class="marquee__dot">✦</span>
     </div>
   </div>
@@ -98,11 +107,8 @@
                   <filter id="grain-about">
                     <feTurbulence type="fractalNoise" baseFrequency="0.04 0.18" numOctaves="6" seed="4" stitchTiles="stitch"/>
                     <feColorMatrix type="saturate" values="0.4"/>
-                    <feBlend in="SourceGraphic" mode="soft-light" result="blend"/>
+                    <feBlend in="SourceGraphic" mode="soft-light"/>
                   </filter>
-                </defs>
-                <rect width="400" height="500" fill="url(#woodGradAbout)" filter="url(#grain-about)" opacity="0.4"/>
-                <defs>
                   <linearGradient id="woodGradAbout" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" stop-color="#E8C49A"/>
                     <stop offset="40%" stop-color="#B8845A"/>
@@ -110,7 +116,7 @@
                     <stop offset="100%" stop-color="#C4956A"/>
                   </linearGradient>
                 </defs>
-                <!-- Grain lines -->
+                <rect width="400" height="500" fill="url(#woodGradAbout)" filter="url(#grain-about)" opacity="0.4"/>
                 <line x1="0" y1="55"  x2="400" y2="48"  stroke="#7A4A20" stroke-width="0.8" opacity="0.18"/>
                 <line x1="0" y1="90"  x2="400" y2="95"  stroke="#6B3D18" stroke-width="1.2" opacity="0.22"/>
                 <line x1="0" y1="130" x2="400" y2="128" stroke="#7A4A20" stroke-width="0.6" opacity="0.15"/>
@@ -122,7 +128,6 @@
                 <line x1="0" y1="385" x2="400" y2="382" stroke="#7A4A20" stroke-width="0.8" opacity="0.16"/>
                 <line x1="0" y1="420" x2="400" y2="425" stroke="#8B5530" stroke-width="1.0" opacity="0.20"/>
                 <line x1="0" y1="460" x2="400" y2="458" stroke="#6B3D18" stroke-width="0.7" opacity="0.15"/>
-                <!-- Knot hint -->
                 <ellipse cx="280" cy="200" rx="18" ry="12" fill="none" stroke="#5A3018" stroke-width="1.2" opacity="0.3"/>
                 <ellipse cx="280" cy="200" rx="10" ry="7"  fill="none" stroke="#5A3018" stroke-width="0.8" opacity="0.25"/>
               </svg>
@@ -137,14 +142,14 @@
         <div class="about__content" data-aos="fade-left">
           <span class="section-tag">L'Artisan</span>
           <h2 class="section-title">Une passion <em>transmise</em><br>par le bois</h2>
-          <p class="about__p">Depuis mon atelier, j'élabore chaque planche avec un soin particulier. Le chêne massif est pour moi bien plus qu'un matériau — c'est un héritage vivant, aux veines uniques et à la chaleur incomparable.</p>
-          <p class="about__p">Chaque pièce naît d'une sélection rigoureuse du bois, d'un travail patient à la main et d'une finition soignée à l'huile naturelle. Aucune planche ne ressemble à une autre.</p>
+          <p class="about__p">Depuis mon atelier, j'élabore chaque planche avec une attention singulière. Le chêne massif est pour moi bien plus qu'un matériau — c'est un héritage vivant, porteur de veines uniques et d'une chaleur incomparable.</p>
+          <p class="about__p">Chaque pièce naît d'une sélection rigoureuse du bois, d'un travail patient à la main et d'une finition soignée à l'huile naturelle. Aucune planche ne ressemble à une autre — et c'est précisément ce qui en fait toute la valeur.</p>
           <ul class="about__values">
             <li class="about__value" data-aos="fade-up" data-aos-delay="100">
               <span class="about__value-icon">◈</span>
               <div>
                 <strong>Pièce unique</strong>
-                <p>Chaque planche est façonnée individuellement, aucune reproduction identique</p>
+                <p>Chaque planche est façonnée individuellement — aucune reproduction identique</p>
               </div>
             </li>
             <li class="about__value" data-aos="fade-up" data-aos-delay="200">
@@ -180,7 +185,7 @@
       <div class="products__grid">
 
         <!-- S — La Petite -->
-        <article class="card" data-aos="fade-up" data-aos-delay="0">
+        <article class="card" data-product="s" data-aos="fade-up" data-aos-delay="0">
           <div class="card__visual">
             <div class="card__wood card__wood--s"></div>
             <svg class="card__board-svg" viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -196,18 +201,24 @@
           <div class="card__body">
             <span class="card__tag">Apéritif &amp; Dégustation</span>
             <h3 class="card__name">La Petite</h3>
-            <p class="card__desc">Idéale pour la présentation de fromages, charcuteries ou tapas. Compacte et élégante, elle s'impose aussi bien à la table qu'au buffet.</p>
+            <p class="card__desc">Élégante et compacte, elle est pensée pour la présentation de fromages affinés, de charcuteries ou de tapas. Elle s'invite aussi bien sur la table des grands repas que lors d'une soirée apéro.</p>
             <div class="card__specs">
               <div class="spec"><span class="spec__l">Format</span><span class="spec__v">25 × 15 cm</span></div>
               <div class="spec"><span class="spec__l">Épaisseur</span><span class="spec__v">2,5 cm</span></div>
               <div class="spec"><span class="spec__l">Poids</span><span class="spec__v">~600 g</span></div>
             </div>
-            <a href="#contact" class="card__cta">Commander <span>→</span></a>
+            <div class="card__price-row">
+              <span class="card__price">CHF 45</span>
+              <button class="card__add-btn" data-product="s" data-name="La Petite" data-price="45">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Ajouter au panier
+              </button>
+            </div>
           </div>
         </article>
 
         <!-- M — La Classique (featured) -->
-        <article class="card card--featured" data-aos="fade-up" data-aos-delay="120">
+        <article class="card card--featured" data-product="m" data-aos="fade-up" data-aos-delay="120">
           <div class="card__ribbon">Best-seller</div>
           <div class="card__visual">
             <div class="card__wood card__wood--m"></div>
@@ -218,7 +229,6 @@
               <line x1="15" y1="118" x2="240" y2="118" stroke="rgba(255,220,150,0.13)" stroke-width="1"/>
               <line x1="15" y1="145" x2="240" y2="145" stroke="rgba(255,220,150,0.09)" stroke-width="1"/>
               <line x1="15" y1="170" x2="240" y2="170" stroke="rgba(255,220,150,0.11)" stroke-width="1"/>
-              <!-- Handle -->
               <path d="M 240 100 Q 270 100 274 82 Q 278 62 258 56" stroke="rgba(255,220,150,0.3)" stroke-width="1.5" stroke-linecap="round"/>
               <ellipse cx="150" cy="115" rx="14" ry="9" fill="none" stroke="rgba(255,200,100,0.22)" stroke-width="1"/>
             </svg>
@@ -227,18 +237,24 @@
           <div class="card__body">
             <span class="card__tag">Cuisine &amp; Découpe</span>
             <h3 class="card__name">La Classique</h3>
-            <p class="card__desc">La planche à découper par excellence. Robuste, maniable et magnifique, elle s'impose comme pièce maîtresse de votre cuisine — un outil d'exception, un objet de décoration.</p>
+            <p class="card__desc">La planche à découper par excellence. Robuste, généreuse et magnifique, elle devient l'objet incontournable de votre cuisine — un outil de précision qui est aussi une pièce de décoration à part entière.</p>
             <div class="card__specs">
               <div class="spec"><span class="spec__l">Format</span><span class="spec__v">40 × 25 cm</span></div>
               <div class="spec"><span class="spec__l">Épaisseur</span><span class="spec__v">3 cm</span></div>
               <div class="spec"><span class="spec__l">Poids</span><span class="spec__v">~1,5 kg</span></div>
             </div>
-            <a href="#contact" class="card__cta">Commander <span>→</span></a>
+            <div class="card__price-row">
+              <span class="card__price">CHF 85</span>
+              <button class="card__add-btn" data-product="m" data-name="La Classique" data-price="85">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Ajouter au panier
+              </button>
+            </div>
           </div>
         </article>
 
         <!-- L — La Grande -->
-        <article class="card" data-aos="fade-up" data-aos-delay="240">
+        <article class="card" data-product="l" data-aos="fade-up" data-aos-delay="240">
           <div class="card__visual">
             <div class="card__wood card__wood--l"></div>
             <svg class="card__board-svg" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -249,7 +265,7 @@
               <line x1="10" y1="138" x2="280" y2="138" stroke="rgba(255,220,150,0.07)" stroke-width="1"/>
               <line x1="10" y1="163" x2="280" y2="163" stroke="rgba(255,220,150,0.11)" stroke-width="1"/>
               <line x1="10" y1="185" x2="280" y2="185" stroke="rgba(255,220,150,0.07)" stroke-width="1"/>
-              <ellipse cx="90"  cy="100" rx="20" ry="13" fill="none" stroke="rgba(255,200,100,0.2)" stroke-width="1"/>
+              <ellipse cx="90"  cy="100" rx="20" ry="13" fill="none" stroke="rgba(255,200,100,0.2)"  stroke-width="1"/>
               <ellipse cx="90"  cy="100" rx="10" ry="7"  fill="none" stroke="rgba(255,200,100,0.14)" stroke-width="0.8"/>
               <ellipse cx="220" cy="150" rx="12" ry="8"  fill="none" stroke="rgba(255,200,100,0.16)" stroke-width="0.8"/>
             </svg>
@@ -258,16 +274,52 @@
           <div class="card__body">
             <span class="card__tag">Service &amp; Gastronomie</span>
             <h3 class="card__name">La Grande</h3>
-            <p class="card__desc">Le plateau de service ultime. Généreux et saisissant, il transforme chaque repas en moment de partage raffiné. Parfait pour les grandes tablées et présentations gastro.</p>
+            <p class="card__desc">Le plateau de service qui transforme chaque repas en moment de partage mémorable. Généreux, imposant et beau, il est taillé pour les grandes tablées, les présentations gastronomes et les moments d'exception.</p>
             <div class="card__specs">
               <div class="spec"><span class="spec__l">Format</span><span class="spec__v">55 × 35 cm</span></div>
               <div class="spec"><span class="spec__l">Épaisseur</span><span class="spec__v">3,5 cm</span></div>
               <div class="spec"><span class="spec__l">Poids</span><span class="spec__v">~3 kg</span></div>
             </div>
-            <a href="#contact" class="card__cta">Commander <span>→</span></a>
+            <div class="card__price-row">
+              <span class="card__price">CHF 135</span>
+              <button class="card__add-btn" data-product="l" data-name="La Grande" data-price="135">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Ajouter au panier
+              </button>
+            </div>
           </div>
         </article>
 
+      </div>
+
+      <!-- Payment badges -->
+      <div class="payment-info" data-aos="fade-up">
+        <span class="payment-info__label">Paiement accepté</span>
+        <div class="payment-info__badges">
+          <!-- Twint -->
+          <span class="pay-badge pay-badge--twint">
+            <svg width="18" height="18" viewBox="0 0 40 40" aria-hidden="true">
+              <rect width="40" height="40" rx="8" fill="#FFCC00"/>
+              <text x="20" y="26" font-size="14" font-weight="900" text-anchor="middle" fill="#000" font-family="Arial">T</text>
+            </svg>
+            Twint
+          </span>
+          <!-- Mastercard -->
+          <span class="pay-badge pay-badge--mc">
+            <svg width="28" height="18" viewBox="0 0 50 30" aria-hidden="true">
+              <circle cx="18" cy="15" r="13" fill="#EB001B"/>
+              <circle cx="32" cy="15" r="13" fill="#F79E1B"/>
+              <path d="M25 6a13 13 0 010 18 13 13 0 010-18z" fill="#FF5F00"/>
+            </svg>
+            Mastercard
+          </span>
+          <!-- Visa -->
+          <span class="pay-badge pay-badge--visa">
+            <svg width="32" height="18" viewBox="0 0 60 20" aria-hidden="true">
+              <text x="0" y="16" font-size="18" font-weight="900" fill="#1A1F71" font-family="Arial" letter-spacing="-1">VISA</text>
+            </svg>
+          </span>
+        </div>
       </div>
     </div>
   </section>
@@ -318,7 +370,6 @@
   <section class="materials" id="materials">
     <div class="container">
       <div class="materials__grid">
-
         <div class="materials__content" data-aos="fade-right">
           <span class="section-tag">Matériaux</span>
           <h2 class="section-title">Le chêne, <em>roi des bois</em></h2>
@@ -350,12 +401,11 @@
               <span class="feat__icon">✦</span>
               <div>
                 <strong>Unicité garantie</strong>
-                <p>Chaque bois a ses veines propres, aucune copie n'est possible</p>
+                <p>Chaque bois a ses propres veines — aucune copie n'est possible</p>
               </div>
             </div>
           </div>
         </div>
-
         <div class="materials__visual" data-aos="fade-left">
           <div class="wood-stack">
             <div class="wood-plank wood-plank--light">
@@ -373,8 +423,7 @@
                 <line x1="0" y1="44" x2="400" y2="42" stroke="#7A5028" stroke-width="1.5" opacity="0.38"/>
                 <line x1="0" y1="62" x2="400" y2="64" stroke="#8B5E35" stroke-width="0.8" opacity="0.3"/>
                 <line x1="0" y1="82" x2="400" y2="80" stroke="#9A6A3A" stroke-width="1.2" opacity="0.35"/>
-                <ellipse cx="80"  cy="52" rx="18" ry="11" fill="none" stroke="#6B4220" stroke-width="1.0" opacity="0.45"/>
-                <ellipse cx="80"  cy="52" rx="9"  rx="9" ry="6"  fill="none" stroke="#6B4220" stroke-width="0.7" opacity="0.35"/>
+                <ellipse cx="80" cy="52" rx="18" ry="11" fill="none" stroke="#6B4220" stroke-width="1.0" opacity="0.45"/>
               </svg>
               <span class="plank__label">Chêne classique — veines marquées</span>
             </div>
@@ -389,7 +438,6 @@
             <div class="wood-stack__label">Chêne massif — 3 tonalités naturelles</div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -398,9 +446,9 @@
   <section class="contact" id="contact">
     <div class="container">
       <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">Commander</span>
-        <h2 class="section-title">Votre planche <em>sur mesure</em></h2>
-        <p class="section-desc">Chaque commande est traitée personnellement. Décrivez vos attentes et je reviens vers vous dans les 48h.</p>
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Une question,<br><em>un projet sur mesure ?</em></h2>
+        <p class="section-desc">Je reviens vers vous dans les 48h pour chaque demande personnalisée, gravure, ou projet spécial.</p>
       </div>
       <div class="contact__grid">
         <form class="contact__form" id="contactForm" data-aos="fade-right" novalidate>
@@ -415,7 +463,7 @@
             </div>
           </div>
           <div class="form__group">
-            <label for="fproduct">Planche souhaitée</label>
+            <label for="fproduct">Planche concernée</label>
             <select id="fproduct" name="product">
               <option value="">Choisir un format…</option>
               <option value="s">La Petite — S (25 × 15 cm)</option>
@@ -426,19 +474,18 @@
           </div>
           <div class="form__group">
             <label for="fmsg">Votre message</label>
-            <textarea id="fmsg" name="message" rows="4" placeholder="Décrivez vos attentes, vos questions, une personnalisation éventuelle…"></textarea>
+            <textarea id="fmsg" name="message" rows="4" placeholder="Gravure, dimensions spécifiques, cadeau d'entreprise…"></textarea>
           </div>
-          <button type="submit" class="btn btn--gold btn--full">Envoyer ma demande</button>
+          <button type="submit" class="btn btn--primary btn--full">Envoyer ma demande</button>
         </form>
-
         <div class="contact__info" data-aos="fade-left">
           <div class="contact__block">
-            <h3>Un artisanat de proximité</h3>
-            <p>Chaque planche est fabriquée à la commande dans mon atelier. Le délai de fabrication est généralement de 1 à 3 semaines selon la demande et la complexité de la pièce.</p>
+            <h3>Artisanat de proximité</h3>
+            <p>Chaque planche est fabriquée à la commande. Le délai de fabrication est de 1 à 3 semaines selon la demande et la complexité de la pièce.</p>
           </div>
           <div class="contact__block">
             <h3>Pièces personnalisées</h3>
-            <p>Gravure, format sur mesure, finition spéciale ou cadeau d'entreprise — discutons de votre projet directement. Chaque détail compte.</p>
+            <p>Gravure, format sur mesure, finition spéciale ou cadeau d'entreprise — tout est possible. Contactez-moi pour en discuter.</p>
           </div>
           <div class="contact__block contact__block--last">
             <h3>Suivre l'atelier</h3>
@@ -462,6 +509,11 @@
             <small>by SR</small>
           </div>
           <p>Planches en chêne massif façonnées à la main, avec soin et passion. Chaque pièce est unique.</p>
+          <div class="footer__pay">
+            <svg width="28" height="20" viewBox="0 0 50 30" aria-label="Mastercard"><circle cx="18" cy="15" r="13" fill="#EB001B"/><circle cx="32" cy="15" r="13" fill="#F79E1B"/><path d="M25 6a13 13 0 010 18 13 13 0 010-18z" fill="#FF5F00"/></svg>
+            <svg width="34" height="20" viewBox="0 0 60 20" aria-label="Visa"><text x="0" y="16" font-size="18" font-weight="900" fill="#1A1F71" font-family="Arial" letter-spacing="-1">VISA</text></svg>
+            <svg width="20" height="20" viewBox="0 0 40 40" aria-label="Twint"><rect width="40" height="40" rx="8" fill="#FFCC00"/><text x="20" y="26" font-size="14" font-weight="900" text-anchor="middle" fill="#000" font-family="Arial">T</text></svg>
+          </div>
         </div>
         <div class="footer__nav">
           <h4>Navigation</h4>
@@ -470,13 +522,13 @@
             <li><a href="#products">Nos Planches</a></li>
             <li><a href="#process">Fabrication</a></li>
             <li><a href="#materials">Matériaux</a></li>
-            <li><a href="#contact">Commander</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer__contact">
-          <h4>Contact &amp; Commandes</h4>
-          <p>Disponible pour toute commande, projet sur mesure ou renseignement.</p>
-          <a href="#contact" class="btn btn--outline-light btn--sm">Nous écrire</a>
+          <h4>Commandes</h4>
+          <p>Fabriqué à la commande, délai 1–3 semaines. Livraison en Suisse.</p>
+          <a href="#products" class="btn btn--outline-light btn--sm">Voir les planches</a>
         </div>
       </div>
       <div class="footer__bottom">
@@ -485,6 +537,151 @@
       </div>
     </div>
   </footer>
+
+  <!-- =================== CART DRAWER =================== -->
+  <div class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-drawer__overlay" id="cartOverlay"></div>
+    <div class="cart-drawer__panel" role="dialog" aria-label="Votre panier">
+      <div class="cart-drawer__head">
+        <h3 class="cart-drawer__title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          Votre panier
+        </h3>
+        <button class="cart-drawer__close" id="cartClose" aria-label="Fermer">✕</button>
+      </div>
+      <div class="cart-drawer__body" id="cartBody">
+        <!-- populated by JS -->
+      </div>
+      <div class="cart-drawer__foot" id="cartFoot" style="display:none">
+        <div class="cart-total">
+          <span>Total</span>
+          <span id="cartTotal">CHF 0</span>
+        </div>
+        <p class="cart-shipping">Livraison offerte dès CHF 120 d'achat</p>
+        <button class="btn btn--primary btn--full" id="checkoutBtn">Procéder au paiement</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================== CHECKOUT MODAL =================== -->
+  <div class="checkout-modal" id="checkoutModal" aria-hidden="true">
+    <div class="checkout-modal__overlay" id="checkoutOverlay"></div>
+    <div class="checkout-modal__panel" role="dialog" aria-label="Paiement">
+
+      <!-- Step 1: Info client -->
+      <div class="checkout-step" id="stepInfo" data-step="1">
+        <div class="checkout-modal__head">
+          <span class="checkout-step-num">1 / 2</span>
+          <h3>Vos informations</h3>
+          <button class="checkout-modal__close" id="checkoutClose" aria-label="Fermer">✕</button>
+        </div>
+        <div class="checkout-summary" id="checkoutSummary"></div>
+        <form id="infoForm" novalidate>
+          <div class="checkout-form-row">
+            <div class="checkout-form-group">
+              <label for="c-name">Nom complet</label>
+              <input type="text" id="c-name" placeholder="Marie Dupont" required>
+            </div>
+            <div class="checkout-form-group">
+              <label for="c-email">Email</label>
+              <input type="email" id="c-email" placeholder="marie@email.com" required>
+            </div>
+          </div>
+          <div class="checkout-form-group">
+            <label for="c-address">Adresse de livraison</label>
+            <input type="text" id="c-address" placeholder="Rue des Artisans 12, 1000 Lausanne" required>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Continuer vers le paiement →</button>
+        </form>
+      </div>
+
+      <!-- Step 2: Payment -->
+      <div class="checkout-step" id="stepPay" data-step="2" style="display:none">
+        <div class="checkout-modal__head">
+          <button class="checkout-back" id="backBtn" aria-label="Retour">← Retour</button>
+          <span class="checkout-step-num">2 / 2</span>
+          <button class="checkout-modal__close" aria-label="Fermer" onclick="closeCheckout()">✕</button>
+        </div>
+        <div class="pay-total-banner" id="payTotalBanner"></div>
+        <div class="pay-tabs">
+          <button class="pay-tab active" data-tab="twint">
+            <svg width="20" height="20" viewBox="0 0 40 40"><rect width="40" height="40" rx="8" fill="#FFCC00"/><text x="20" y="26" font-size="14" font-weight="900" text-anchor="middle" fill="#000" font-family="Arial">T</text></svg>
+            Twint
+          </button>
+          <button class="pay-tab" data-tab="card">
+            <svg width="30" height="20" viewBox="0 0 50 30"><circle cx="18" cy="15" r="13" fill="#EB001B"/><circle cx="32" cy="15" r="13" fill="#F79E1B"/><path d="M25 6a13 13 0 010 18 13 13 0 010-18z" fill="#FF5F00"/></svg>
+            Carte
+          </button>
+        </div>
+
+        <!-- Twint tab -->
+        <div class="pay-panel active" id="tabTwint">
+          <div class="twint-panel">
+            <div class="twint-qr" id="twintQr" aria-label="QR code Twint">
+              <!-- QR code SVG generé par JS -->
+            </div>
+            <p class="twint-or">— ou —</p>
+            <button class="btn-twint" id="twintAppBtn">
+              <svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="8" fill="#FFCC00"/><text x="20" y="26" font-size="14" font-weight="900" text-anchor="middle" fill="#000" font-family="Arial">T</text></svg>
+              Payer avec Twint
+            </button>
+            <p class="twint-hint">Scannez le QR code avec votre app Twint,<br>ou appuyez sur le bouton pour ouvrir l'application.</p>
+          </div>
+        </div>
+
+        <!-- Card tab -->
+        <div class="pay-panel" id="tabCard" style="display:none">
+          <form id="cardForm" novalidate>
+            <div class="checkout-form-group">
+              <label for="c-cardnum">Numéro de carte</label>
+              <div class="card-input-wrap">
+                <input type="text" id="c-cardnum" placeholder="0000 0000 0000 0000" maxlength="19" inputmode="numeric" autocomplete="cc-number">
+                <span class="card-brand-icon" id="cardBrandIcon"></span>
+              </div>
+            </div>
+            <div class="checkout-form-row">
+              <div class="checkout-form-group">
+                <label for="c-expiry">Expiration</label>
+                <input type="text" id="c-expiry" placeholder="MM / AA" maxlength="7" inputmode="numeric" autocomplete="cc-exp">
+              </div>
+              <div class="checkout-form-group">
+                <label for="c-cvv">CVV</label>
+                <input type="text" id="c-cvv" placeholder="123" maxlength="4" inputmode="numeric" autocomplete="cc-csc">
+              </div>
+            </div>
+            <div class="checkout-form-group">
+              <label for="c-holder">Nom sur la carte</label>
+              <input type="text" id="c-holder" placeholder="MARIE DUPONT" autocomplete="cc-name" style="text-transform:uppercase">
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="payCardBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+              Payer <span id="payBtnAmount"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Step 3: Success -->
+      <div class="checkout-step" id="stepSuccess" data-step="3" style="display:none">
+        <div class="success-screen">
+          <div class="success-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3>Commande confirmée !</h3>
+          <p id="successMsg">Merci pour votre commande. Vous recevrez une confirmation par email sous peu.</p>
+          <p class="success-order" id="successOrder"></p>
+          <button class="btn btn--primary" onclick="closeCheckout(); closeCart();">Fermer</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Loading overlay -->
+  <div class="pay-loading" id="payLoading" style="display:none" aria-hidden="true">
+    <div class="pay-loading__spinner"></div>
+    <p>Traitement du paiement…</p>
+  </div>
 
   <script src="script.js"></script>
 </body>
